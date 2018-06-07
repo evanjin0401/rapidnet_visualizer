@@ -1,0 +1,43 @@
+#
+# Format notes:
+#
+# Comments are marked with a hash and may not appear mid-line.
+#
+# Line syntax is:
+#   state ':' [style '=' commands]
+#   state ':' [style '=' commands], [style '=' commands], ...
+#
+# Style commands are:
+# color <6 or 8 digit hex code>  sets the fill color of the node, optionally
+#   with an alpha value.
+# linecolor <6 or 8 digit hex code>  sets the stroke color of the node,
+#   optionally with an alpha value.
+# linewidth <double>  sets the width of the node border.
+# radius <double>  sets the size of the node.
+# shape <circle|square>  sets the shape of the node.
+# double <true|false> sets the node to be double bordered (spacing based on linewidth).
+
+# double border doesn't show well at thinner linewidths
+command: color=000000, linewidth=1, double=true
+
+user: color=ff0000, linewidth=0.5
+
+client: linewidth=4, linecolor=0000ff, shape=square, double=true
+
+eQuery: linewidth=2, linecolor=0333E6, color=00ff00, shape=square, double=true
+eQuery_Dst: linewidth=2, linecolor=0333E6, color=ff0000, shape=square, double=true
+tBestPath: color=00ff00, linecolor=ff0000, shape=square, linewidth=2, double=true
+ePathDst: linewidth=2, color=00ff00
+ePathSrc: linewidth=2, color=ff0000
+
+eMessageInjectOriginal: linewidth=2, linecolor=0333E6, color=32CD32, shape=square, double=true
+eMessageInjectDst: linewidth=2, linecolor=CD3333, color=FF4040, shape=square, double=true
+tMessage: linewidth=2, color=32CD32
+eMessageEnd: linewidth=2, linecolor=CD3333, color=32CD32, shape=square, double=true
+
+low: color=4169E1
+med: color=00CD00
+high: color=ed7f19
+veryhigh: color=ff0000
+
+chordRing: color=ffb90f, linecolor=8B3E2F, linewidth=1

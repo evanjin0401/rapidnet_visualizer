@@ -1,0 +1,37 @@
+#
+# Format notes:
+#
+# Comments are marked with a hash and may not appear mid-line.
+#
+# Line syntax is:
+#   state ':' [style '=' commands]
+#   state ':' [style '=' commands], [style '=' commands], ...
+#
+# Style commands are:
+# linewidth <double>  Set the width of the link line.
+# color <6 or 8 digit hex code>  Set the color of the link, optionally
+#   with an alpha value.
+#
+
+weak: linewidth=0.5, color=0000ff
+strong: linewidth=4
+fancy:  color=00ff00
+default: color=ff000033
+link: linewidth=0.5
+
+linkSrc: linewidth=1, color=ff0000
+bestPath: linewidth=5, color=ff0000
+
+eBitVectorReply: linewidth=3, color=0000ff
+recv_eMessage: linewidth=0.5
+#recv_eMessage: linewidth=3, color=00ff00
+
+bestSucc: linewidth=3, color=238E68
+afinger: linewidth=0.5, color=FF2400
+
+low: linewidth=2, color=1874CD
+med: linewidth=2, color=D2691E
+high: linewidth=2, color=EE3B3B
+veryhigh: linewidth=2, color=FF2400
+
+eLSU_1: linewidth=2, color=1874CD
